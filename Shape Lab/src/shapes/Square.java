@@ -6,13 +6,11 @@ public class Square extends Rectangle {
 
 	public Square(int side) {
 		super(side, side);
-		this.side = side;
 	}
 
 	@Override
 	public String toString() {
-		// To be written by student
-		return "";
+		return "The area of the square is "+calculateArea()+"."+"The perimeter of the square is "+calculatePerimeter()+".";
 	}
 
 }
