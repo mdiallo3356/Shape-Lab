@@ -10,8 +10,8 @@ package shapes;
  *         Choose one of the following: Triangle, Pentagon, Hexagon, Heptagon,
  *         etc. Choose one of the following: Rhombus, Trapezoid, Parallelogram,
  *         Kite
- * 
- *         Both classes must extend shape, and implement all necessary methods.
+ * 		   *Triangle and Rhombus*
+ *         Both classes must implement shape, and implement all necessary methods.
  */
 public class Runner {
 
