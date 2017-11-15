@@ -37,7 +37,6 @@ public class Runner {
 
 		shapeArr = new Shape[10];
 
-		// Why are we using a for loop instead of a for-each loop here?
 		for (int i = 0; i < shapeArr.length; i++) {
 			shapeArr[i] = ShapeUtilities.randomShape();
 		}

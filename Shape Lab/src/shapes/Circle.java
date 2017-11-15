@@ -6,29 +6,22 @@ package shapes;
  */
 public class Circle implements Shape {
 
-	// fields
 	private int radius;
 	private static double pi = 3.14;
-
-	/**
-	 * Constructor method
-	 * 
-	 * @param radius
-	 */
 	public Circle(int radius) {
 		this.radius = radius;
 }
 
-	@Override
+	
 	public double calculateArea() {
 		return( pi*(radius*radius));
 	}
-	@Override
+	
 	public double calculatePerimeter() {
 		return (2*pi*radius);
 	}
 
-	@Override
+	
 	public String toString() {
 		return "The area of the circle is" + " " + calculateArea() + "." + "The circumference of the circle is"+" "+calculatePerimeter()+".";
 	}
