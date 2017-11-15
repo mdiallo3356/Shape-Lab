@@ -11,8 +11,18 @@ public class Rhombus implements Shape {
  this.diagonal2=diagonal2;
  }
  
+ public void printRhombus()
+ { if((this.diagonal1>0)&&(this.diagonal2>0)&&(this.diagonal1!=this.diagonal2))
+ {calculateArea();
+  calculatePerimeter(); 
+ }
+ else {System.out.println("This is not a rhombus.");}
+ }
+	 
  public double calculateArea()
- {return ((diagonal1*diagonal2)/2);}
+  {return ((diagonal1*diagonal2)/2);}
+  
+ 
  public double calculatePerimeter()
  {return 4*side;}
  public String toString()
