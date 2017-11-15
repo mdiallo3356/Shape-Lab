@@ -20,11 +20,19 @@ public class Rhombus implements Shape {
  }
 	 
  public double calculateArea()
-  {return ((diagonal1*diagonal2)/2);}
+  {
+	 if((this.diagonal1>0)&&(this.diagonal2>0)&&(this.diagonal1!=this.diagonal2)) {
+	 return ((diagonal1*diagonal2)/2);}
+	 else {return 0;}
+  }
   
  
  public double calculatePerimeter()
- {return 4*side;}
+ {
+	 if((this.diagonal1>0)&&(this.diagonal2>0)&&(this.diagonal1!=this.diagonal2)) {
+	 return 4*side;}
+	 else {return 0;}
+ }
  public String toString()
  {return "Rhombus area "+this.calculateArea()+" Rhombus Perimeter: "+this.calculatePerimeter();}
 }

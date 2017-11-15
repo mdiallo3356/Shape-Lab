@@ -16,19 +16,17 @@ public class Triangle implements Shape {
 		this.Side3 = Side3;	
 		
 	}
-   
-   public void printTriangle()
-   {if((Side1<this.Side2+this.Side3) && (Side2<this.Side1+this.Side3) && (Side3<this.Side1+this.Side2))
-     {calculateArea();
-     calculatePerimeter();}
-   else{System.out.println("This is not a triangle.");}
-   }
-   
    public double calculateArea()
-   {return 0.5*Base*Height;	   
+   {
+	   if((Side1<this.Side2+this.Side3) && (Side2<this.Side1+this.Side3) && (Side3<this.Side1+this.Side2)) {
+	   return 0.5*Base*Height;}
+	   else {return 0;}
    }
    public double calculatePerimeter()
-   {return Side1+Side2+Side3;	   
+   {
+	   if((Side1<this.Side2+this.Side3) && (Side2<this.Side1+this.Side3) && (Side3<this.Side1+this.Side2)) {
+	   return Side1+Side2+Side3;}
+	   else {return 0;}
    }
    public String toString()
    {return "Triangle perimeter is "+this.calculatePerimeter()+" Triangle area is "+this.calculateArea();
